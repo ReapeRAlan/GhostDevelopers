@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "Horus_backend": {
+      "main": "src/Horus_backend/main.mo",
+      "type": "motoko"
+    },
+    "Horus_frontend": {
+      "dependencies": [
+        "Horus_backend"
+      ],
+      "source": [
+        "src/Horus_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
